@@ -5,7 +5,7 @@ const pool = new pg.Pool({
   database: "dcvqvk9a9lv86i",
   password: "eb4d0b3418df7c8d68fe4ad1a26f73359f954f929bd88315d2d957c317f8bad2",
   port: 5432,
-  // ssl: { ssl: { rejectUnauthorized: false } },
+  ssl: { rejectUnauthorized: false } ,
 });
 
 export default function query(text, params) {
